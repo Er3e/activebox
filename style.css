@@ -75,9 +75,14 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.active-dot {
+  background-color: #fff !important;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
+  min-width: 320px;
 }
 
 .wrapper {
@@ -88,7 +93,6 @@ body {
 header {
   background: url("img/header-background.png");
   background-repeat: no-repeat;
-  width: 100%;
 }
 header .masthead {
   color: #ffffff;
@@ -118,6 +122,9 @@ header .masthead div a {
 }
 header nav .nav-item {
   font-size: 13px;
+}
+header nav .navbar-toggler {
+  border: 0;
 }
 
 .features .features-item {
@@ -167,7 +174,7 @@ header nav .nav-item {
   bottom: 40%;
 }
 
-.team .team-item img {
+.team .team-img {
   width: 100%;
 }
 .team h5 {
@@ -191,12 +198,7 @@ header nav .nav-item {
   margin-bottom: 12px;
 }
 .team .team-social a {
-  padding: 12px;
   border: 1px solid #e8ecee;
-}
-.team .team-social a img {
-  width: 16px;
-  height: 16px;
 }
 
 .clients {
@@ -206,16 +208,14 @@ header nav .nav-item {
   background-color: #53354a;
 }
 .clients .slider-text {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-width: 575px;
   position: relative;
-  padding: 110px 70px;
+  cursor: pointer;
 }
 .clients .slider-text p {
-  font-size: 35px;
   font-family: "Cardo", serif;
   color: #ffffff;
 }
@@ -287,11 +287,8 @@ footer .footer-top .footer-icons {
 footer .footer-top .footer-icons a {
   border: 2px solid #fff;
   border-radius: 2px;
-  padding: 12px;
-}
-footer .footer-top .footer-icons a img {
-  width: 16px;
-  height: 16px;
+  height: 40px;
+  width: 40px;
 }
 footer .footer-bottom {
   background-color: #313454;
@@ -308,7 +305,19 @@ footer .footer-bottom .heart {
   color: #e84545;
 }
 
-@media screen and (min-device-width: 992px) {
+.facebook-icon {
+  padding: 11px 15px;
+}
+
+.twitter-icon {
+  padding: 11px 9px;
+}
+
+.in-icon {
+  padding: 11px;
+}
+
+@media screen and (min-device-width: 1201px) {
   .team {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -338,6 +347,58 @@ footer .footer-bottom .heart {
   }
   .features .features-item {
     padding-bottom: 80px;
+  }
+
+  .slider-text {
+    height: 100%;
+    padding: 65px 70px;
+  }
+  .slider-text p {
+    font-size: 35px;
+  }
+
+  .footer-top {
+    padding: 70px;
+  }
+}
+@media screen and (max-device-width: 1200px) {
+  .team {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .team .team-item {
+    margin-bottom: 50px;
+  }
+
+  header {
+    background-size: cover;
+  }
+
+  .nav-item {
+    padding: 45px 20px;
+  }
+
+  .masthead {
+    padding: 150px 6.3157894737%;
+  }
+  .masthead h1 {
+    font-size: 65px;
+  }
+
+  .features {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  .features .features-item {
+    padding-bottom: 80px;
+  }
+
+  .slider-text {
+    height: 100%;
+    padding: 10% 70px;
+  }
+  .slider-text p {
+    font-size: 2.5vw;
   }
 
   .footer-top {
@@ -376,6 +437,15 @@ footer .footer-bottom .heart {
     padding-bottom: 60px;
   }
 
+  .slider-text {
+    height: 200px;
+    padding: 20px 70px;
+    margin: 0 auto;
+  }
+  .slider-text p {
+    font-size: 25px;
+  }
+
   .footer-top {
     padding: 70px;
   }
@@ -411,8 +481,17 @@ footer .footer-bottom .heart {
     padding-bottom: 40px;
   }
 
+  .slider-text {
+    height: 200px;
+    padding: 20px 40px;
+    margin: 0 auto;
+  }
+  .slider-text p {
+    font-size: 20px;
+  }
+
   .footer-top {
-    padding: 20px 0;
+    padding: 20px;
   }
   .footer-top h5 {
     margin-top: 30px;

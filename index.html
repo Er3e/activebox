@@ -51,8 +51,8 @@
 
    <main>
 
-         <a href="#" name="features"></a>
-         <div class="features container wrapper">
+      <a href="#" name="features"></a>
+      <div class="features container wrapper">
             <div class="row">
                <div class="col-lg-4 col-sm-6 features-item">
                   <div class="features-img"><img src="img/features1.png" alt="logo"></div>
@@ -85,7 +85,7 @@
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor </p>
                </div>
             </div>
-         </div>
+      </div>
       
       <a href="#" name="works"></a>
       <div class="works container-fluid">
@@ -109,47 +109,47 @@
       <div class="team wrapper container">
          <div class="row">
             <div class="col-sm-6 col-lg-3 team-item">
-               <img src="img/team1.png" alt="team member">
+               <img src="img/team1.png" class="team-img" alt="team member">
                <h5>Ruth Woods</h5>
                <h6>Founder, CEO</h6>
                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                <div class="team-social">
-                  <a href="#"><img src="img/team-icon1.png" alt="facebook"></a>
-                  <a href="#"><img src="img/team-icon2.png" alt="twitter"></a>
-                  <a href="#"><img src="img/team-icon3.png" alt="logo"></a>
+                  <a href="#" class="facebook-icon"><img src="img/team-icon1.png" alt="facebook"></a>
+                  <a href="#" class="twitter-icon"><img src="img/team-icon2.png" alt="twitter"></a>
+                  <a href="#" class="in-icon"><img src="img/team-icon3.png" alt="logo"></a>
                </div>
             </div>
             <div class="col-sm-6 col-lg-3 team-item">
-               <img src="img/team2.png" alt="team member">
+               <img src="img/team2.png" class="team-img" alt="team member">
                <h5>Timothy Reed</h5>
                <h6>Co-Founder, Developer</h6>
                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                <div class="team-social">
-                  <a href="#"><img src="img/team-icon1.png" alt="facebook"></a>
-                  <a href="#"><img src="img/team-icon2.png" alt="twitter"></a>
-                  <a href="#"><img src="img/team-icon3.png" alt="logo"></a>
+                  <a href="#" class="facebook-icon"><img src="img/team-icon1.png" alt="facebook"></a>
+                  <a href="#" class="twitter-icon"><img src="img/team-icon2.png" alt="twitter"></a>
+                  <a href="#" class="in-icon"><img src="img/team-icon3.png" alt="logo"></a>
                </div>
             </div>
             <div class="col-sm-6 col-lg-3 team-item">
-               <img src="img/team3.png" alt="team member">
+               <img src="img/team3.png" class="team-img" alt="team member">
                <h5>Victoria Valdez</h5>
                <h6>UI Designer</h6>
                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                <div class="team-social">
-                  <a href="#"><img src="img/team-icon1.png" alt="facebook"></a>
-                  <a href="#"><img src="img/team-icon2.png" alt="twitter"></a>
-                  <a href="#"><img src="img/team-icon3.png" alt="logo"></a>
+                  <a href="#" class="facebook-icon"><img src="img/team-icon1.png" alt="facebook"></a>
+                  <a href="#" class="twitter-icon"><img src="img/team-icon2.png" alt="twitter"></a>
+                  <a href="#" class="in-icon"><img src="img/team-icon3.png" alt="logo"></a>
                </div>
             </div>
             <div class="col-sm-6 col-lg-3 team-item">
-               <img src="img/team4.png" alt="team member">
+               <img src="img/team4.png" class="team-img" alt="team member">
                <h5>Beverly Little</h5>
                <h6>Data Scientist</h6>
                <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                <div class="team-social">
-                  <a href="#"><img src="img/team-icon1.png" alt="facebook"></a>
-                  <a href="#"><img src="img/team-icon2.png" alt="twitter"></a>
-                  <a href="#"><img src="img/team-icon3.png" alt="logo"></a>
+                  <a href="#" class="facebook-icon"><img src="img/team-icon1.png" alt="facebook"></a>
+                  <a href="#" class="twitter-icon"><img src="img/team-icon2.png" alt="twitter"></a>
+                  <a href="#" class="in-icon"><img src="img/team-icon3.png" alt="logo"></a>
                </div>
             </div>
          </div>
@@ -158,21 +158,34 @@
       <a href="#" name="clients"></a>
       <div class="clients container-fluid">
          <div class="row no-gutters">
-            <div class="col-md-6 slider-img">
+            <div class="col-lg-6 slider-img">
                <img src="https://picsum.photos/id/1011/1920/1080" alt="client">
             </div>
-            <div class="col-md-6 clients-quote">
-               <div class="slider-text">
+            <div class="col-lg-6 clients-quote">
+               <div class="slider-text" onclick="changeSlide()">
                   <div class="slide">
                      <p>“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
                      <h6>Susan Sims, Interaction Designer at XYZ</h6>
                   </div>
-                  <div class="slide hiden"></div>
-                  <div class="slide hiden"></div>
-                  <div class="slide hiden"></div>
-                  <div class="slide hiden"></div>
+                  <div class="slide hiden">
+                     <p>“Voluptas eum excepturi laudantium nemo labore magni quas incidunt neque possimus molestias eaque enim dignissimos...</p>
+                     <h6>Lorem ipsum dolor sit amet.”</h6>
+                  </div>
+                  <div class="slide hiden">
+                     <p>“Lorem, ipsum dolor sit amet consectetur adipisicing elit. At sequi magnam eius veniam adipisci omnis.”</p>
+                     <h6>Lorem ipsum dolor sit.</h6>
+                  </div>
+                  <div class="slide hiden">
+                     <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sed quae omnis fugit minima quia vel doloribus eum voluptatum alias!”</p>
+                     <h6>Lorem, ipsum dolor.</h6>
+                  </div>
+                  <div class="slide hiden">
+                     <p>“Qui excepturi aut, tempore assumenda ullam natus consectetur temporibus maxime in delectus vel pariatur dolore! Illum, eius.”</p>
+                     <h6>Lorem ipsum dolor sit amet consectetur.
+                     </h6>
+                  </div>
                   <div class="dots">
-                     <div class="dot"></div>
+                     <div class="dot active-dot"></div>
                      <div class="dot"></div>
                      <div class="dot"></div>
                      <div class="dot"></div>
@@ -203,9 +216,9 @@
             <div class="col-md-4">
                <h5>share with love</h5>
                <div class="footer-icons">
-                  <a href="#"><img src="img/footer-icon1.png" alt="facebook"></a>
-                  <a href="#"><img src="img/footer-icon2.png" alt="twitter"></a>
-                  <a href="#"><img src="img/footer-icon3.png" alt="logo"></a>
+                  <a href="#" class="facebook-icon"><img src="img/footer-icon1.png" alt="facebook"></a>
+                  <a href="#" class="twitter-icon"><img src="img/footer-icon2.png" alt="twitter"></a>
+                  <a href="#" class="in-icon"><img src="img/footer-icon3.png" alt="logo"></a>
                </div>
             </div>
             <div class="col-md-4">
